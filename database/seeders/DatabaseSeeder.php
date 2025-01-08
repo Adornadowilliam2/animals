@@ -13,7 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
 
         AnimalType::create([
             "animal_type_name" => "Mammal"
@@ -33,6 +32,9 @@ class DatabaseSeeder extends Seeder
 
         AnimalType::create([
             "animal_type_name" => "Amphibian"
+        ]);
+        AnimalType::create([
+            "animal_type_name" => "Insect"
         ]);
     }
 }
